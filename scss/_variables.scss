@@ -1,0 +1,20 @@
+// Font Families
+$roboto: "Roboto", serif;
+$timesNewRoman: "Times New Roman", Times, serif;
+$lato: "Lato", sans-serif;
+$oswald: "Oswald", sans-serif;
+$openSans: "Open Sans", sans-serif;
+
+// Font Weights
+$font-weights: (
+  "light": 200,
+  "thin": 300,
+  "normal": 400,
+  "medium": 500,
+  "semi-bold": 600,
+  "bold": 700,
+);
+
+@function weight($weight-key) {
+  @return map-get($font-weights, $weight-key);
+}
